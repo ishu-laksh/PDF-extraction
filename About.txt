@@ -1,0 +1,22 @@
+About This Project
+Project Name: PDF Text Extraction and Labeling
+Description:
+This project extracts text data from PDF documents and labels each document according to its category (e.g., "chase" or "non-chase"). The extracted text is organized by page and saved into a CSV file, which can be used for further data processing, such as training machine learning models.
+
+How It Works:
+The code utilizes the PyMuPDF (fitz) library to extract text from each page of the PDF files.
+The extracted text is associated with a label that corresponds to the category of the document.
+The text and labels are then combined into a Pandas DataFrame and saved as a CSV file, with a download link provided for easy access.
+Input:
+A list of PDF files with their respective labels is provided in the code. The user can modify this list to include their own PDF files.
+Output:
+The code outputs a CSV file named dataset.csv, containing the extracted text from the PDFs and their associated labels.
+Each row of the CSV file contains the page number, extracted text, and the label of the document it came from.
+Use Case:
+This tool is useful for classifying documents, building datasets for training machine learning models (e.g., text classification using BERT), or simply organizing and analyzing large sets of PDFs.
+
+Instructions:
+Install dependencies: Ensure that PyMuPDF and Pandas are installed in your environment.
+Add PDFs: Update the pdfs_with_labels list in the code with the paths to your PDFs and their corresponding labels.
+Run the script: Execute the script to generate the CSV file.
+Download the CSV: The script will generate and provide a download link for the CSV file containing the extracted text and labels.
